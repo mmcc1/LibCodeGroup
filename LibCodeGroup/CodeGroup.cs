@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Linq;
+﻿using System.Text;
 
 
 namespace LibCodeGroup
@@ -22,19 +19,15 @@ namespace LibCodeGroup
             "GA", "GB", "GC", "GD", "GE", "GF", "GG", "GH", "GI", "GJ", "GK", "GL", "GM", "GN", "GO", "GP", "GQ", "GR", "GS", "GT", "GU", "GV", "GW", "GX", "GY", "GZ",
             "HA", "HB", "HC", "HD", "HE", "HF", "HG", "HH", "HI", "HJ", "HK", "HL", "HM", "HN", "HO", "HP", "HQ", "HR", "HS", "HT", "HU", "HV", "HW", "HX", "HY", "HZ",
             "IA", "IB", "IC", "ID", "IE", "IF", "IG", "IH", "II", "IJ", "IK", "IL", "IM", "IN", "IO", "IP", "IQ", "IR", "IS", "IT", "IU", "IV", "IW", "IX", "IY", "IZ",
-            "JA", "JB", "JC", "JD", "JE", "JF", "JG", "JH", "JI", "JJ", "JK", "JL", "JM", "JN", "JO", "JP", "JQ", "JR", "JS", "JT", "JU", "IV"
+            "JA", "JB", "JC", "JD", "JE", "JF", "JG", "JH", "JI", "JJ", "JK", "JL", "JM", "JN", "JO", "JP", "JQ", "JR", "JS", "JT", "JU", "JV"
         };
-
-
 
         public static string ConvertToCode(byte[] data)
         {
             StringBuilder sb = new StringBuilder();
 
             for (int i = 0; i < data.Length; i++)
-            {
                 sb.Append(lookup[(int)data[i]]);
-            }
 
             return sb.ToString();
         }
@@ -53,10 +46,8 @@ namespace LibCodeGroup
         private static int FindIndex(string data)
         {
             for(int i = 0; i < lookup.Length; i++)
-            {
                 if (lookup[i] == data)
                     return i;
-            }
 
             return -1;
         }
