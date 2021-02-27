@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeGrouper", "CodeGrouper\CodeGrouper.csproj", "{3CDCC451-7AB6-42FB-91E8-5F10B3703F23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibCodeGroup", "LibCodeGroup\LibCodeGroup.csproj", "{F3E6FFCD-546E-4022-A700-0092A6E1E463}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3CDCC451-7AB6-42FB-91E8-5F10B3703F23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CDCC451-7AB6-42FB-91E8-5F10B3703F23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CDCC451-7AB6-42FB-91E8-5F10B3703F23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CDCC451-7AB6-42FB-91E8-5F10B3703F23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3E6FFCD-546E-4022-A700-0092A6E1E463}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3E6FFCD-546E-4022-A700-0092A6E1E463}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3E6FFCD-546E-4022-A700-0092A6E1E463}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3E6FFCD-546E-4022-A700-0092A6E1E463}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {91AA042E-1954-446D-B517-CC64257DF16B}
+	EndGlobalSection
+EndGlobal
