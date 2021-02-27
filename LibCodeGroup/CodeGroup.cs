@@ -45,17 +45,8 @@ namespace LibCodeGroup
             int index = 0;
 
             for (int i = 0; i < decoded.Length; i++)
-            {
-                char a = data[index++];
-                char b = data[index++];
-
-                string c = a.ToString() + b.ToString();
-
-                int ind = FindIndex(c);
-
-                decoded[i] = (byte)ind;
-            }
-
+                decoded[i] = (byte)FindIndex(data[index++].ToString() + data[index++].ToString());
+                
             return decoded;
         }
 

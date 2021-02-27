@@ -8,7 +8,7 @@ namespace CodeGrouper
     {
         static void Main(string[] args)
         {
-            byte[] file = new byte[32768];
+            byte[] file = new byte[256];
             RNGCryptoServiceProvider rng = new RNGCryptoServiceProvider();
             rng.GetBytes(file);
 
