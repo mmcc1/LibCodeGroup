@@ -26,6 +26,12 @@ namespace LibCodeGroup
             "JAAAA", "JBAAA", "JCAAA", "JDAAA", "JEAAA", "JFAAA", "JGAAA", "JHAAA", "JIAAA", "JJAAA", "JKAAA", "JLAAA", "JMAAA", "JNAAA", "JOAAA", "JPAAA", "JQAAA", "JRAAA", "JSAAA", "JTAAA", "JUAAA", "JVAAA"
         };
 
+        public static string[] GenerateLookup()
+        {
+            lookup = Generate.CodeGroup5Lookup();
+            return lookup;
+        }
+
         public static string ConvertToCode(byte[] data)
         {
             StringBuilder sb = new StringBuilder();

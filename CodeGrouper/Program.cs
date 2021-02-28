@@ -12,8 +12,12 @@ namespace CodeGrouper
             RNGCryptoServiceProvider rng = new RNGCryptoServiceProvider();
             rng.GetBytes(file);
 
+            string[] lookup = CodeGroup.GenerateLookup();  //Generate a random lookup
+
             string codedFile = CodeGroup.ConvertToCode(file);
             byte[] decodefile = CodeGroup.ConvertFromCode(codedFile);
+
+            string[] lookup5 = CodeGroup5.GenerateLookup();  //Generate a random lookup
 
             string coded5File = CodeGroup5.ConvertToCode(file);
             byte[] decode5file = CodeGroup5.ConvertFromCode(coded5File);
