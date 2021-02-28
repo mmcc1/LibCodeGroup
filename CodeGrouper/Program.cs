@@ -15,6 +15,9 @@ namespace CodeGrouper
             string codedFile = CodeGroup.ConvertToCode(file);
             byte[] decodefile = CodeGroup.ConvertFromCode(codedFile);
 
+            string coded5File = CodeGroup5.ConvertToCode(file);
+            byte[] decode5file = CodeGroup5.ConvertFromCode(coded5File);
+
             Console.ReadLine();
         }
     }
